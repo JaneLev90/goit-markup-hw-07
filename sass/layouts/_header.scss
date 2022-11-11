@@ -1,0 +1,99 @@
+/*header*/
+
+  .nav {
+    border-bottom: 1px solid #eeeeee;
+  }
+  .main-nav {
+    @extend %alignlist;
+  }
+  .navigation {
+    margin-left: 93px;
+  }
+  nav .current {
+    color: var(--color-active);
+    position: relative;
+  }
+  .current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-bottom: 2px;
+    background-color: var(--color-active);
+    border-radius: 2px;
+  }
+  .logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--color-logo);
+  }
+  .page-logo {
+    color: var(--color-active);
+  }
+  
+  .nav-list {
+    display: flex;
+ 
+    > li:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  
+  .nav-page {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--color-primary);
+    cursor: pointer;
+  
+    transition: color var(--shift);
+  
+    &:hover, &:focus {
+      color: var(--color-active);
+    }
+  }
+  
+  
+  .contacts {
+    font-weight: 500;
+    line-height: 1.1;
+    @extend %alignlist;
+    color: var(--color-second);
+  
+    transition: color var(--shift);
+  
+    &:hover, &:focus {
+      color: var(--color-active);
+    }
+  }
+  
+  
+  .nav-contacts {
+    display: flex;
+    margin-left: auto;
+  
+  > li:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  
+  .icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .icon-smartphon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  
