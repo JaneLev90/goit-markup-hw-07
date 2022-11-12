@@ -1,7 +1,10 @@
 /* section*/
-.features {
-    padding-top: 0;
-  }
+  
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
   .section-lists {
     display: flex;
     gap: 30px;
@@ -19,7 +22,10 @@
     text-align: center;
     color: var(--color-primary);
   }
-  
+  .features {
+    padding-top: 0;
+  }
+
   .features-desc {
     position: absolute;
     bottom: 0;

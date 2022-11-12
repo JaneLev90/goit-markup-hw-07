@@ -1,6 +1,6 @@
 /*Секція 2*/
 
-.benefits-icon::before {
+.benefits__icon::before {
     content: "";
     display: block;
     background-color: var(--color-background);
@@ -22,7 +22,7 @@
     background-image: url(../images/astronaut.svg);
   }
   
-  .benefits-title {
+  .benefits__title {
     margin-bottom: 10px;
   
     font-weight: 700;
@@ -31,7 +31,7 @@
     text-transform: uppercase;
     color: var(--color-primary);
   }
-  .benefits-text {
+  .benefits__text {
     margin-bottom: 0;
   
     line-height: 1.7;
